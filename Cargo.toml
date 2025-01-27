@@ -1,0 +1,33 @@
+[package]
+name = "auxdismdump"
+description = "doohickey to help figure out bytecode instructions in BYOND"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lucy <lucy@absolucy.moe>"]
+repository = "https://github.com/Absolucy/auxdismdump"
+license = "GPL-3.0"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+auxtools = { git = "https://github.com/willox/auxtools" }
+dmasm = { git = "https://github.com/checkraisefold/dmasm", branch = "update-spacemandmm" }
+
+[lints.clippy]
+# presets
+complexity = "warn"
+correctness = "warn"
+perf = "warn"
+style = "warn"
+suspicious = "warn"
+# individual lints
+assigning_clones = "warn"
+create_dir = "warn"
+default_trait_access = "warn"
+inefficient_to_string = "warn"
+redundant_type_annotations = "warn"
+self_named_module_files = "warn"
+str_to_string = "warn"
+string_to_string = "warn"
