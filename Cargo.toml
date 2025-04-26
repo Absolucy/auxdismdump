@@ -2,7 +2,7 @@
 name = "auxdismdump"
 description = "doohickey to help figure out bytecode instructions in BYOND"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 authors = ["Lucy <lucy@absolucy.moe>"]
 repository = "https://github.com/Absolucy/auxdismdump"
 license = "GPL-3.0"
