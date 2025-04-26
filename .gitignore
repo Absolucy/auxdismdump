@@ -1,8 +1,11 @@
 /target
-*.lk
-*.rsc
-*.dmb
-*.zip
-*.int
-dism.txt
 Cargo.lock
+
+# Don't commit the actual disassembly output.
+dism.txt
+
+# Ignore compiled BYOND artifacts
+instruction-test.*
+# Don't ignore the actual code, tho.
+!instruction-test.dm
+!instruction-test.dme
