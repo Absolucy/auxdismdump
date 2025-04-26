@@ -1,6 +1,6 @@
 pub mod env;
 
-use auxtools::{hook, raw_types::procs::ProcId, Proc, Value};
+use auxtools::{Proc, Value, hook, raw_types::procs::ProcId};
 use dmasm::disassembler::DisassembleError;
 
 #[hook("/proc/dump_disms")]

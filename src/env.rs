@@ -1,10 +1,10 @@
 use auxtools::{
+	Proc, StringRef, Value,
 	raw_types::{
 		procs::ProcId,
 		strings::{StringId, VariableId},
 		values::{ValueData, ValueTag},
 	},
-	Proc, StringRef, Value,
 };
 use dmasm::disassembler::DisassembleEnv;
 
