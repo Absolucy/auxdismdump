@@ -17,64 +17,28 @@
 	return ..()
 */
 
-/*
-/proc/_isnan(x)
-	return isnan(x)
+/proc/_load_ext()
+	return load_ext("cat.dll", "meow")
 
-/proc/_isinf(x)
-	return isinf(x)
+/proc/_call_ext(loaded)
+	return call_ext(loaded)()
 
-/proc/_fract(x)
-	return fract(x)
+/proc/_alist()
+	return alist(
+		1 = "meow",
+		"mrrp" = "mrrow",
+	)
 
-/proc/_trunc(x)
-	return trunc(x)
+/proc/_spaceship(a, b)
+	return a <=> b
 
-/proc/_ceil(x)
-	return ceil(x)
+/proc/_k_v_in_list(list/list)
+	for(var/k, v in list)
+		world.log << "[k]: [v]"
 
-/proc/_floor(x)
-	return floor(x)
+/datum/template
+	var/width
+	var/height
 
-/proc/_refcount(x)
-	return refcount(x)
-
-/proc/_get_steps_to(a, b, c)
-	return get_steps_to(a, b, c)
-
-/proc/_noise_hash(list/nums)
-	return noise_hash(nums)
-
-/proc/_trimtext(x)
-	return trimtext(x)
-
-/proc/_ptr_ref(x)
-	return &x
-
-/proc/_ptr_ref_datum_var(datum/test/x)
-	return &x.meow
-
-/proc/_ptr_deref(x)
-	*x = 1
-*/
-
-/*
-/proc/_ftime(x)
-	return ftime(x)
-
-/proc/_equals_modulo(x, y)
-	x %%= y
-	return x
-
-/proc/_x_pow_2(x)
-	return x ** 2
-
-/proc/_x_pow_neg_1(x)
-	return x ** -1
-
-/proc/_x_times_x(x)
-	return x * x
-*/
-
-/proc/_double_colon(datum/test/x)
-	return x::meow
+/proc/_block_turfs(atom/true_spawn, datum/template/template)
+	return block(true_spawn.x, true_spawn.y, true_spawn.z, true_spawn.x + template.width, true_spawn.y + template.height, true_spawn.z)

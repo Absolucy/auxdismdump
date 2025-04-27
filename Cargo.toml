@@ -13,7 +13,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 auxtools = { git = "https://github.com/willox/auxtools" }
-dmasm = { git = "https://github.com/willox/dmasm", branch = "the-516ining" }
+dmasm = { path = "C:\\Users\\Lucy\\Code\\BYOND\\dmasm" }
 
 [lints.clippy]
 # presets
