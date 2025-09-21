@@ -9,5 +9,5 @@ PROC_DUMP(len_test, list/meow) {
 }
 
 PROC_DUMP(length_test, list/meow) {
-	return meow.len
+	return length(meow)
 }
