@@ -10,6 +10,12 @@
 /proc/dump_disms()
 	CRASH("auxtools not loaded")
 
+/proc/dump_proc(proc_name)
+	CRASH("auxtools not loaded")
+
+/proc/all_proc_names()
+	CRASH("auxtools not loaded")
+
 /world/proc/init_debugger()
 	var/dll = GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	world.log << "AUXTOOLS_DEBUG_DLL: [dll]"

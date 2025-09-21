@@ -9,3 +9,6 @@ instruction-test.*
 # Don't ignore the actual code, tho.
 !instruction-test.dm
 !instruction-test.dme
+
+/out/*
+!/out/.keep
